@@ -14,6 +14,7 @@ def primes():
         n=next(it)
         yield n
         it = filter((_not_divisible),it)
+        #it = filter(lambda x: x % n > 0 ,it)
 
 for i in primes():
     if i<1000:
